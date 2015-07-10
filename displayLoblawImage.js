@@ -10,7 +10,10 @@ for (i = 0; i < images.length; i++){
 	$(img).attr('src', displayImage); 
 }
 
-document.body.style.backgroundImage = "url('http://i.imgur.com/ruowh3r.gif')";
+var loblawGifs = ['http://i.imgur.com/S5HiKjK.gif', 
+				  'http://i.imgur.com/ruowh3r.gif',];
+var randInt = Math.floor(Math.random() * loblawGifs.length);
+$("body").css("background-image","url('"+loblawGifs[randInt]+"')");
 
 
 $("body").children().each(function () {
