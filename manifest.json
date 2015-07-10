@@ -1,0 +1,34 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+	"manifest_version": 2,
+	"name": "Loblawfy",
+	"version": "0.1",
+	
+	
+	"description": "Loblawfy your internet",
+	"background": {
+		"scripts":["main.js","request.js"]
+	},
+	"browser_action": {
+		"default_icon": { 
+			"19": "icons/19.png",
+			"38": "icons/38.png",
+			"48": "icons/48.png",
+			"128": "icons/128.png"
+		},
+		"default_title": "Loblawfy"
+	},
+	"author": "Jason Du",
+	"permissions":[
+		"activeTab",
+		"http://i.imgur.com/",
+		"webRequest", 
+		"webRequestBlocking", 
+		"activeTab",
+		"http://i.imgur.com/", 
+		"http://www.walmart.ca/*", 
+		"http://www.loblaws.ca/*", 
+		"http://www.walmart.com/*"
+	]
+}
