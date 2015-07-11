@@ -1,8 +1,5 @@
 
 chrome.webRequest.onBeforeRequest.addListener(function(details) {
-    chrome.tabs.executeScript(null, {file: "jquery.js"}, function() {
-        chrome.tabs.executeScript(null, { file: "displayLoblawImage.js" });
-    });
     return detectRedirect(details);
 }, {
     urls : ["<all_urls>"],
